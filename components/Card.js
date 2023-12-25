@@ -41,7 +41,7 @@ const Card = ({
       <Image
         //src={`/${thumbnail.regular.small}`}
         //src={image}
-        src={`/${imageType}`}
+        src={imageType}
         width={280}
         height={174}
         alt={title}

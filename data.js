@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     title: "Beyond Earth",
-    imageType: "./assets/thumbnails/beyond-earth/regular/small.jpg",
+    imageType: "/assets/thumbnails/beyond-earth/regular/small.jpg",
     thumbnail: {
       trending: {
         small: "./assets/thumbnails/beyond-earth/trending/small.jpg",
