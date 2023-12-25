@@ -7,16 +7,7 @@ import { TbMovie } from "react-icons/tb";
 import BookmarkEmpty from "../public/assets/icon-bookmark-empty.svg";
 import BookmarkFull from "../public/assets/icon-bookmark-full.svg";
 
-const Card = ({
-  title,
-  id,
-  year,
-  category,
-  rating,
-  thumbnail,
-  imageSize,
-  imageType,
-}) => {
+const Card = ({ title, id, year, category, rating, thumbnail }) => {
   const [toggled, setToggled] = useState(true);
 
   const handleClick = () => {
@@ -40,8 +31,7 @@ const Card = ({
     <article key={id} className="relative">
       <Image
         //src={`/${thumbnail.regular.small}`}
-        //src={image}
-        src={imageType}
+        src={thumbnail.regular.small}
         width={280}
         height={174}
         alt={title}
