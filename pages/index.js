@@ -27,8 +27,9 @@ export default function Home() {
             })
 
             .map((movie) => {
-              //console.log(listNumber);
-              return <Card key={movie.id} {...movie} />;
+              let imageSize = `/${movie.thumbnail.regular.small}`;
+              //let imageSize = movie.thumbnail.regular.small;
+              return <Card key={movie.id} {...movie} {...imageSize} />;
             })}
         </div>
       </section>
