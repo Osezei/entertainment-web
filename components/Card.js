@@ -30,8 +30,8 @@ const Card = ({ title, id, year, category, rating, thumbnail }) => {
   return (
     <article key={id} className="relative">
       <Image
-        //src={`/${thumbnail.regular.small}`}
-        src={image}
+        src={`/${thumbnail.regular.small}`}
+        //src={image}
         width={280}
         height={174}
         alt={title}
