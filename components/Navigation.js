@@ -21,7 +21,7 @@ const Navigation = ({ activePage }) => {
             <Link
               key={id}
               href={url}
-              className={`text-2xl ease-in-out duration-300  ${
+              className={`text-2xl ease-in-out duration-300 hover:text-[#FC4747]  ${
                 activePage === title ? "text-white " : "text-[#5A698F]"
               }`}
             >

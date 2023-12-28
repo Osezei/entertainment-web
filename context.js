@@ -26,10 +26,15 @@ const AppProvider = function ({ children }) {
     isTrending: false,
     bookmark: bookmarkList,
   };
+  //handling bookmark
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("bookmark", JSON.stringify(state.bookmark));
+  }, [state.bookmark]);
 
   const moviesCategory = (value) => {
     dispatch({ type: "HANDLE_CATEGORY", payload: value });

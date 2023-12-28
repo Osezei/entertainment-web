@@ -33,3 +33,6 @@ body {
   line-height: 110px;
   margin-right: 2px;
 }
+.red-bg {
+  background-color: #fc4747;
+}

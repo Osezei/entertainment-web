@@ -69,10 +69,10 @@ const Card = ({ title, id, year, category, rating, thumbnail }) => {
           <p className="text-[18px] font-medium">{title}</p>
         </div>
       </section>
-
       {/* <button onClick={() => addBookmark(movie, movie.id)}>bookmark</button>
       <button onClick={() => removeBookmark(movie, movie.id)}>remove</button> */}
-      <div className=""></div>
+      {/* <div className=""></div> */}
+      {/* bookmark button start */}
       <div className="absolute top-[16px] right-[16px] border-[16px] border-opacity-[0.5006] rounded-full border-[#10141E] flex justify-center place-items-center">
         <button onClick={handleClick} className="overflow-hidden">
           {toggled ? (
@@ -98,6 +98,8 @@ const Card = ({ title, id, year, category, rating, thumbnail }) => {
           )}
         </button>
       </div>
+
+      {/* bookmark button end */}
     </article>
   );
 };
