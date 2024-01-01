@@ -7,6 +7,7 @@ const AppContext = React.createContext();
 const AppProvider = function ({ children }) {
   const ls = typeof window !== "undefined" ? window.localStorage : null;
   const [bookmarkList, setBookmarkList] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   useEffect(() => {
     if (bookmarkList?.length > 0) {
       ls?.setItem("bookmark", JSON.stringify(bookmarkList));
@@ -29,8 +30,6 @@ const AppProvider = function ({ children }) {
   //handling bookmark
 
   const [state, dispatch] = useReducer(reducer, initialState);
-
-  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     localStorage.setItem("bookmark", JSON.stringify(state.bookmark));

@@ -36,7 +36,16 @@ const Card = ({ title, id, year, category, rating, thumbnail }) => {
         height={174}
         alt={title}
         priority
-        className=" rounded-lg"
+        className="hidden lg:block rounded-lg"
+      />
+      <Image
+        //src={`/${thumbnail.regular.small}`}
+        src={thumbnail.regular.small}
+        width={220}
+        height={140}
+        alt={title}
+        priority
+        className="rounded-lg lg:hidden"
       />
       <section>
         <div className="mt-2 text-[13px] font-light flex gap-x-2 opacity-50">
@@ -73,7 +82,7 @@ const Card = ({ title, id, year, category, rating, thumbnail }) => {
       <button onClick={() => removeBookmark(movie, movie.id)}>remove</button> */}
       {/* <div className=""></div> */}
       {/* bookmark button start */}
-      <div className="absolute top-[16px] right-[16px] border-[16px] border-opacity-[0.5006] rounded-full border-[#10141E] flex justify-center place-items-center">
+      <div className=" absolute top-0 right-0 lg:top-[16px] lg:right-[16px] border-[16px] border-opacity-[0.5006] rounded-full border-[#10141E] flex justify-center place-items-center">
         <button onClick={handleClick} className="overflow-hidden">
           {toggled ? (
             <p onClick={() => addBookmark(movie, movie.id)}>
