@@ -7,13 +7,13 @@ import UserPic from "../public/assets/image-avatar.png";
 
 const Navigation = ({ activePage }) => {
   return (
-    <section className="h-[72px] w-min-full mx-[25px] lg:h-[960px] lg:w-[96px]  rounded-[10px] lg:rounded-[20px] bg-[#161D2F] flex justify-around lg:flex-col lg:place-items-center">
+    <section className="h-[72px] md:mx-[24px] lg:mx-0 lg:h-[960px] lg:w-[96px]  md:rounded-[10px] lg:rounded-[20px] bg-[#161D2F] flex justify-between lg:justify-normal lg:flex-col lg:place-items-center">
       <Image
         src={HomeButton}
         alt=""
         width={32}
         height={26}
-        className="lg:mt-[35px] lg:mb-[75px] object-contain"
+        className="lg:mt-[35px] lg:mb-[75px] object-contain ml-[16px] md:ml-[24px] lg:ml-0"
       />
       <div className="lg:h-[200px] flex lg:flex-col justify-between my-auto lg:my-0">
         {url.map((item) => {
@@ -36,7 +36,7 @@ const Navigation = ({ activePage }) => {
         width={32}
         height={32}
         alt="userpic"
-        className="object-contain"
+        className="object-contain mr-[16px] md:mr-[24px] lg:mr-0 lg:hidden"
       />
     </section>
   );

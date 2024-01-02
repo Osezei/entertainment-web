@@ -45,7 +45,16 @@ const Card = ({ title, id, year, category, rating, thumbnail }) => {
         height={140}
         alt={title}
         priority
-        className="rounded-lg lg:hidden"
+        className="rounded-lg md:block lg:hidden hidden"
+      />
+      <Image
+        //src={`/${thumbnail.regular.small}`}
+        src={thumbnail.regular.small}
+        width={164}
+        height={110}
+        alt={title}
+        priority
+        className="rounded-lg md:hidden"
       />
       <section>
         <div className="mt-2 text-[13px] font-light flex gap-x-2 opacity-50">

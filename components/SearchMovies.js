@@ -47,8 +47,8 @@ const SearchMovies = ({ activePage }) => {
   }
 
   return (
-    <section className="flex mb-[35px]">
-      <p className="my-auto text-white pr-6 text-2xl">
+    <section className="flex mb-[26px] md:mb-[35px]">
+      <p className="my-auto text-white pr-[16px] md:pr-6 text-[16px] md:text-2xl">
         <BiSearch />
       </p>
       <form>
@@ -59,7 +59,7 @@ const SearchMovies = ({ activePage }) => {
           onChange={(event) => {
             setSearchTerm(event.target.value);
           }}
-          className="text-white bg-transparent w-[400px] focus:outline-none capitalize"
+          className="text-white bg-transparent md:w-[400px] focus:outline-none capitalize"
         />
       </form>
     </section>
