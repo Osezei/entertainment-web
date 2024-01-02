@@ -9,9 +9,9 @@ export const Layout = ({ children, activePage }) => {
       <Head>
         <title>{activePage} -- movies</title>
       </Head>
-      <div className="md:mt-[23px] lg:mt-8 flex flex-col lg:flex-row justify-center md:gap-x-[36px]">
+      <div className="md:mt-[23px] lg:mt-8 lg:ml-8  flex flex-col lg:flex-row justify-center md:gap-x-[36px]">
         <Navigation activePage={activePage} />
-        <main className="mt-8 w-min-full lg:w-[1224px] mx-auto">
+        <main className="mt-8 lg:w-[1224px] mx-auto">
           <SearchMovies activePage={activePage} />
           <div>{children}</div>
         </main>
